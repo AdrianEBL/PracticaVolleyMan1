@@ -39,7 +39,6 @@ public class PostAdapter extends ArrayAdapter {
         requestQueue = Volley.newRequestQueue(context);
 
         //Gestionar petición del archivo JSON
-
         // Nueva petición JSONObject
         jsArrayRequest = new JsonObjectRequest(Request.Method.GET, URL_BASE + URL_JSON,
                 (String) null,
@@ -54,14 +53,10 @@ public class PostAdapter extends ArrayAdapter {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Log.d(TAG, "Error Respuesta en JSON: " + error.getMessage());
-
                     }
                 }
         );
-
         requestQueue.add(jsArrayRequest);
-
-
     }
 
     @Override

@@ -1,8 +1,5 @@
 package edu.tecii.android.practicavolleyman1;
 
-/**
- * Created by Maritza on 15/11/2016.
- */
 public class Post {
     private String titulo;
     private String descripcion;
